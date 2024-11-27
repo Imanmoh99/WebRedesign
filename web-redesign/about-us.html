@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="assets/js/sendmail.js"></script>
+                    <!-- TrustBox script -->
+            <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+            <!-- End TrustBox script -->
+                    <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYB205PY5C"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-RYB205PY5C');
+            </script>
+
+        <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "tdtlEABcsUxAMpI8W",
+                });
+            })();
+        </script>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about-us</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- font awesome css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="about-body">
+    <nav class="navbar">
+        <div class='logo'>
+            <a href="#" class="navbar-logo">
+                <img src="assets/img/logo.png" alt="Logo">
+                <span>ETHIOWARE</span>
+            </a>
+        </div>
+        
+        <!-- Hamburger menu button for mobile view -->
+        <div class="hamburger-menu" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <div class="navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about-us.html" class="nav-link">About us</a></li>
+                <li class="nav-item"><a href="#resume-section" class="nav-link">Work With Us</a></li>
+                <li class="nav-item"><a href="#services-section" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="#skills-section" class="nav-link">Contact Us</a></li>
+                <li class="nav-item">
+                    <a href="javascript:void(0);" id="theme-toggle" class="nav-link">
+                        <i class="fas fa-moon"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="#" class="sidebar-logo">
+                <img src="assets/img/logo.png" alt="Logo">
+                <span>ETHIOWARE</span>
+            </a>
+            <div class="close-btn" id="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about-us.html" class="nav-link">About us</a></li>
+            <li class="nav-item"><a href="#resume-section" class="nav-link">Work With Us</a></li>
+            <li class="nav-item"><a href="#services-section" class="nav-link">Publications</a></li>
+            <li class="nav-item"><a href="#skills-section" class="nav-link">Contact Us</a></li>
+        </ul>
+    </div>
+    <main>
+        <section class="about-home" id="home">
+            <div class="about-hero" >
+                <div class="hero__data">
+                    <h1 class="home__title">
+                        About Ethioware
+                    </h1>
+                    <p class="hero__description" style="font-family: Poppins; ">
+                        Explore the history, achievements and impact Ethioware had on the tech community from its creation, up to now.
+                    </p>
+                    <div class="about-buttons" style="display: flex; gap: 5px;">
+                        <button class="hero-button">
+                            In a Nutshell
+                        </button>
+                        
+                        <button class="hero-button">
+                            Mission & Vission
+                        </button>
+                        
+                        <button class="hero-button">
+                            Long Term Goals
+                        </button>
+                    </div>
+                </div>
+                <div class="about-hero-img">
+                    <img src="assets/img/plan.png" >
+                </div>
+            </div>
+        </section>
+
+        <section class="about-second-section">
+            <div class="top">
+                <div class="left">
+                    <h1 class="home__title" style="font-weight: 400;">
+                        What is <strong>Ethioware?</strong>
+                    </h1>
+                </div>
+
+                <div class="right">
+                    <img src="/assets/img/random.svg" alt="random-panda">
+                </div>
+            </div>
+            <div class="bottom">
+                Ethioware is a non-profit Pan-African EdTech initiative that provides high school graduates and young adults across Africa with free, monthly online expert sessions. These sessions, referred to as Pre-training Readiness, focus on real-world experiences, challenges, and success stories shared by professionals in various fields. Our program helps participants identify their career paths, connect with mentors, and access further training and internship opportunities, ensuring they are well-equipped for the job market.
+            </div>
+        </section>
+
+        <section class="about-third-section">
+            <div class="target-container">
+                <div class="target-learning target-cards target-cards-0">
+                    <div class="target-learning-heading target-heading-cards target-headings">
+                      <img src="assets/img/learning.png" alt="learning-icon" class="target-img-icons">
+                      <h1>Learning <br> Management</h1>
+                
+                    </div>
+                    <div class="target-learning-description target-descriptions" >
+                       <p>
+                        Integration with tools like Khanmigo and Google Classroom, augmented with a custom Prompt Library—AI for Education.
+                       </p>
+                    </div>
+                </div>
+                <div class="target-audience target-cards target-cards-1">
+                    <div class="target-audience-heading  target-heading-cards target-headings " >
+                      <img src="assets/img/audience.png" alt="metrics-icon" class="target-img-icons">
+                      <h1>Target <br> Audience</h1>
+                
+                    </div>
+                    <div class="target-audience-description target-descriptions" >
+                          <p>
+                            African youth aged 15-28 with internet access, basic digital literacy, and an intermediate level of English (~215K potential learners).
+                          </p>
+                    </div>
+                </div>
+                <div class="target-metrics target-cards target-cards-2">
+                    <div class="target-metrics-heading target-headings target-heading-cards">
+                      <img src="assets/img/metrics.png" alt="metrics-icon" class="target-img-icons">
+                      <h1>Metrics</h1>
+                    </div>
+                    <div class="target-metrics-description target-descriptions" >
+                        <p>
+                            Confidence levels, completion rates, employment placement rates, and return rates are our core success indicators.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-fourth-section">
+            <div class="current-reach">
+                <div class="current-reach-left">
+                    <div class="current-reach-header">
+                        <img src="assets/img/reach_devicon.png">
+                        <h1>Current Reach</h1>
+                    </div>
+                    <div class="current-reach-description data-descriptions" >
+                        <p>
+                            Ethioware has successfully engaged thousands of students across multiple African countries, providing them with the foundational knowledge and skills required to navigate the job market. Notably, successful trainees aged between 21 and 25, typically comprising BSc. students and early-career professionals have shown the most consistent results, although success is not strictly tied to age.
+                        </p>
+                    </div>
+                </div>
+                <div class="current-reach-right">
+                    <img src="assets/img/social_reach.png" >
+                </div>
+            </div>
+
+            <div class="employment">
+                <div class="employment-left">
+                    <img src="assets/img/goal.png" alt="goal.png">
+                </div>
+                <div class="employment-right">
+                    <div class="employment-right-heading">
+                        <img src="assets/img/clarity-employee.png" alt="" height="80px" width="80px">
+                        <h1>Employment Success</h1>
+                    </div>
+                    <div class="employment-description">
+                        Our programs have contributed to a 40% increase in enrollment rates and 
+                        are designed to achieve at least a 70% employment placement rate among our graduates.
+                    </div>
+                </div>
+            </div>
+
+            <div class="partnerships">
+                <div class="partnerships-left">
+                    <div class="partnerships-left-heading">
+                        <img src="assets/img/mdi-partnership.png" alt="mdi-partnership.png" height="80px" width="80px">
+                        <h1>Strategic Partnerships</h1>
+                    </div>
+                    <div class="partnerships-description">
+                        We collaborate with local and multinational companies to offer specialized training
+                         and internships, ensuring our learners are industry-ready from day one.
+                    </div>
+                </div>
+                <div class="partnerships-right">
+                    <img src="assets/img/partnerships-1.png" alt=""  height="287" width="266px">
+                </div>
+
+            </div>
+
+            <div class="learning">
+                <div class="learning-left">
+                    <img src="assets/img/examination-1.png" alt="goal.png">
+                </div>
+                <div class="learning-right">
+                    <div class="learning-right-heading">
+                        <img src="assets/img/graph.png" alt="">
+                        <h1>Learning Outcomes</h1>
+                    </div>
+                    <div class="learning-description">
+                        Analysis of pre and post-assessment data shows that while initial performance
+                        may be low, the program significantly enhances trainees' performance, with
+                        post-assessment scores demonstrating a positive trend. Continuous
+                        refinement of the training program based on these assessments is a priority to
+                        sustain and improve outcomes.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about-fifth-section">
+            <div class="mission">
+                <div class="mission-top">
+                    <p>Our Mission </p>
+                </div>
+                <div class="mission-middle">
+                    <p>
+                        Ethioware's mission is to bridge the educational and technological skills gap in Africa by empowering the 
+                        continent's youth through tailored, accessible, and practical pre-training programs. We provide high school
+                        graduates with direct anecdotal online sessions with experts in their field of interest. These sessions, known as
+                        Pre-training Readiness, are designed to guide participants so that upon completion, they know where to start,
+                        whom to continue with, and who to contact for further guidance. Our programs emphasize the importance of 
+                        attendance and commitment, as regular participation has been shown to significantly enhance trainees'
+                        success, with those attending consistently performing better in assessments.
+                    </p>
+                    <p>
+                        By integrating advanced technologies like AI in education and fostering partnerships with local and
+                        international institutions, we aim to create a robust learning ecosystem that prepares African youth for
+                        sustainable employment and career growth.
+                    </p>
+                </div>               
+            </div>
+
+            <div class="vision">
+                <div class="vision-top">
+                    <p>Our Vision </p>
+                </div>
+                <div class="vision-middle">
+                    <p>
+                        Our vision is to become the leading Pan-African EdTech platform that equips the next generation of African
+                        leaders with the technical and soft skills necessary to drive economic and social development across the 
+                        continent. By 2040, we aim to aid 200,000 African youth in making well-informed career choices, with a 
+                        minimum employment placement rate of 70% among our program graduates. 
+                    </p>
+                    <p>
+                        We also envision using
+                        predictive analytics, such as Machine Learning and Deep Learning, to improve retention rates by identifying
+                        students at risk and providing early interventions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="goals">
+                <div class="goals-header">
+                    <h1>Long Term Goals</h1>
+                </div>
+                <div class="goals-bottom">
+                    <div class="goals-bottom-left">
+                        <img src="assets/img/lucide-goal.png" alt="lucide-goal.png" height="222px" width="222px">
+                    </div>
+                    <div class="goals-bottom-right">
+                        <p>
+                            Aid 200,000 African youth in making well-informed
+                            career choices by 2040.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="assets/img/logo.png" alt="EthioWare Logo">
+                    <span>ETHIOWARE</span>
+                    
+                </div>
+                 <div class="footer-social">
+                    <a href="https://twitter.com/ethioware"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/@EthiowareSEG"><i class="fab fa-youtube"></i></a>
+                    <a href="https://instagram.com/ethioware_"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                    <a href="https://www.linkedin.com/company/ethioware"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+               
+            </div>
+            
+            <div class="footer-right">
+                <ul class="footer-nav">
+                    <li><a href="#">Home</a>
+                    <ul>
+                    <li><a href="#">General</a></li>
+                         </ul>
+
+                    </li>
+                    <li><a href="#">About Us</a>
+                        <ul>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Mission</a></li>
+                            <li><a href="#">Vision</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Work With Us</a>
+                        <ul>
+                            <li><a href="#">Interns</a></li>
+                            <li><a href="#">Volunteers</a></li>
+                            <li><a href="#">Trainees</a></li>
+                            <li><a href="#">Organizations</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Publication</a>
+                        <ul>
+                            <li><a href="#">RSS</a></li>
+                            <li><a href="#">Academic Papers</a></li>
+                            <li><a href="#">Interviews</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact Us</a>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Send Us A Message</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                
+            </div>
+            
+        </div>
+           <div class="footer-center">
+                <a href="#" class="footer-trustpilot">Review Us on TrustPilot</a>
+            </div>
+
+        <div class="footer-copyright">
+            <p>EthioWare&copy; Copyright reserved. 2021 - 2024</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
