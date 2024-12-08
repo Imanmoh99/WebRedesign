@@ -53,10 +53,9 @@ let fillBlog = (container, k, type) => {
       abstract.textContent = "+ Abstract";
       card.appendChild(abstract);
     }
+
     container.appendChild(card);
   }
-
-  // swiper.update();
 };
 
 let container = document.getElementById("first-cards");
@@ -67,3 +66,5 @@ fillBlog(secondContainer, 3, 2);
 
 let thirdContainer = document.getElementById("third-cards");
 fillBlog(thirdContainer, 5, 3);
+
+inilializeSwiper();
