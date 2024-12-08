@@ -179,6 +179,10 @@ the website, in dark theme
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 /*=============== HEADER ===============*/
 .header {
   width: 100%;
@@ -2052,6 +2056,192 @@ footer {
   width: 50%;
   height: 2px;
   background-color: var(--first-color);
+}
+
+.publications-home {
+  margin-top: 80px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 20px 80px;
+  margin-bottom: 150px;
+}
+@media (max-width: 768px) {
+  .publications-home {
+    margin-top: 10px;
+    padding: 10px 20px;
+    height: 50vh;
+  }
+}
+
+.publications-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.publications-hero p {
+  width: 60%;
+  font-size: 20px;
+}
+.publications-hero .hero__data {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .publications-hero .hero__data {
+    width: 50%;
+    overflow-x: scroll;
+  }
+  .publications-hero p {
+    font-size: 10px;
+    width: 120%;
+  }
+  .publications-hero .publication-buttons {
+    width: 120%;
+  }
+}
+
+.publications-rightbar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
+  gap: 10px;
+  z-index: 50;
+  width: 50%;
+  padding: 5px;
+}
+.publications-rightbar img {
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .publications-rightbar img {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .publications-rightbar {
+    width: 40%;
+    gap: 3px;
+  }
+}
+
+.publications-blogs,
+.publications-interviews {
+  margin-left: 86px;
+}
+
+.publications-interviews {
+  margin-top: 50px;
+}
+
+.blogs-header,
+.interviews-header,
+.academic-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 59px;
+}
+
+.academic-header .breaker {
+  width: 850px;
+}
+
+.breaker {
+  margin: 0 auto;
+  width: 1000px;
+  height: 16px;
+  max-height: 16px;
+  background: linear-gradient(90deg, #111111 0%, rgba(238, 238, 238, 0) 100%);
+  border-radius: 8px;
+  transform: rotate(-180deg);
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-top: 35px;
+  margin-right: 20px;
+}
+
+.publications-cards {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.publications-cards .cards {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.publications-cards .cards .card img {
+  height: 320px;
+  width: 320px;
+}
+
+.cards .card .card-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cards .card .card-desc h2 {
+  margin-left: 130px;
+}
+
+.cards .card .card-desc h3 {
+  margin-left: 80px;
+}
+
+.interview-cards .cards .card img {
+  width: 568px;
+  height: 320px;
+}
+
+.academic-cards .cards .card button {
+  background-color: #111111;
+  color: white;
+  padding: 5px;
+  border-radius: 3%;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.abstract-card {
+  width: 200px;
+  height: 250px;
+  background-color: #999999;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.publications-abstract {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-btn {
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

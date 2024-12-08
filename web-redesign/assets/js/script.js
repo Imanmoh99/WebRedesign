@@ -61,3 +61,4 @@ function toggleFAQ(element) {
     icon.textContent = "_";
   }
 }
+
