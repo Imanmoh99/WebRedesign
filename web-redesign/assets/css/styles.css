@@ -2071,6 +2071,7 @@ footer {
     margin-top: 10px;
     padding: 10px 20px;
     height: 50vh;
+    margin-bottom: 0px;
   }
 }
 
@@ -2126,11 +2127,20 @@ footer {
 }
 
 .publications-blogs,
-.publications-interviews {
+.publications-interviews,
+.publications-academics {
   margin-left: 86px;
 }
+@media (max-width: 768px) {
+  .publications-blogs,
+  .publications-interviews,
+  .publications-academics {
+    margin-left: 10px;
+  }
+}
 
-.publications-interviews {
+.publications-interviews,
+.publications-academics {
   margin-top: 50px;
 }
 
@@ -2141,6 +2151,13 @@ footer {
   flex-direction: row;
   align-items: center;
   margin-right: 59px;
+}
+@media (max-width: 768px) {
+  .blogs-header,
+  .interviews-header,
+  .academic-header {
+    margin-right: 10px;
+  }
 }
 
 .academic-header .breaker {
@@ -2175,7 +2192,7 @@ footer {
 .publications-cards .cards {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 20px;
   transition: transform 0.4s ease-in-out;
 }
 
@@ -2196,6 +2213,11 @@ footer {
 
 .cards .card .card-desc h3 {
   margin-left: 80px;
+}
+
+.card-desc p {
+  width: 90%;
+  text-align: center;
 }
 
 .interview-cards .cards .card img {
@@ -2242,6 +2264,16 @@ footer {
 
 .right-arrow {
   right: 20px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 320px;
 }
 
 /*# sourceMappingURL=styles.css.map */

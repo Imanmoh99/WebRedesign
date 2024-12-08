@@ -25,7 +25,7 @@ let dates = [
 let fillBlog = (container, k, type) => {
   for (let i = 0; i < k; i++) {
     let card = document.createElement("div");
-    card.className = "card";
+    card.className = "swiper-slide card";
 
     let image = document.createElement("img");
     image.src = "assets/img/card-panda.png";
@@ -53,9 +53,10 @@ let fillBlog = (container, k, type) => {
       abstract.textContent = "+ Abstract";
       card.appendChild(abstract);
     }
-
     container.appendChild(card);
   }
+
+  // swiper.update();
 };
 
 let container = document.getElementById("first-cards");
