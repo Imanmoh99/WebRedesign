@@ -2,11 +2,12 @@ const controlPage = (target) => {
   let home = document.getElementById("home-section");
   let about_us = document.getElementById("about-us-section");
   let publication = document.getElementById("publications-section");
+  let work_with_us = document.getElementById("work-with-us-section");
 
-  let all = [home, about_us, publication];
+  let all = [home, about_us, publication, work_with_us];
 
   all.forEach((element) => {
-    if (element.id == target) {
+    if (element.id === target) {
       element.classList.remove("hidden");
     } else {
       element.classList.add("hidden");
@@ -25,7 +26,7 @@ let dates = [
 let fillBlog = (container, k, type) => {
   for (let i = 0; i < k; i++) {
     let card = document.createElement("div");
-    card.className = "swiper-slide card";
+    card.className = "card";
 
     let image = document.createElement("img");
     image.src = "assets/img/card-panda.png";
@@ -66,5 +67,3 @@ fillBlog(secondContainer, 3, 2);
 
 let thirdContainer = document.getElementById("third-cards");
 fillBlog(thirdContainer, 5, 3);
-
-inilializeSwiper();
