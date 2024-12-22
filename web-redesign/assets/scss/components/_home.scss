@@ -59,3 +59,92 @@
         }
     }
 }
+
+
+.homepage-home{
+    margin-top: 80px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 20px 80px;
+    @media (max-width:768px ) {
+      margin-top: 10px;
+      padding: 10px 20px;
+      height: 50vh;
+  }
+    margin-bottom: 100px;
+  }
+
+  .homepage-hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      width: 60%;
+      font-size: 20px;
+    }
+    .hero__data{
+      width: 50%;
+    }
+
+    @media (max-width:768px) {
+      .hero__data{
+        width: 50%;
+        overflow-x: scroll;
+      }
+      p{
+        font-size: 10px;
+        width: 120%;
+      }
+      .publication-buttons{
+        width: 120%;
+      }
+    }
+}
+
+.homepage-rightbar{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: row;
+    gap: 10px;
+    z-index: 50;
+    width: 50%;
+    padding: 5px; 
+    img{
+        width: 30%;
+        @media (max-width:768px ) {
+            width: 40%;
+        }
+    }
+  
+    @media (max-width :768px) {
+      width: 40%;
+      gap: 3px;
+    }
+  }
+
+  .homepage-buttons{
+    display: flex;
+    gap: 30px;
+  }
+  .homepage-buttons .hero-button{
+    font-size: 22px;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 20px;
+
+   
+
+  }
+
+  .home-second-section{
+    display: flex;
+    gap: 170px;
+    margin-left: 100px;
+
+  }
+
+  .home-second-section .rightbar .rightbar-description p{
+    font-size: 20px;
+  }
