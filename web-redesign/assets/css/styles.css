@@ -422,16 +422,154 @@ the website, in dark theme
   padding-right: 20px;
 }
 
-.home-second-section {
+.homepage-second-section {
   display: flex;
   gap: 170px;
   margin-left: 100px;
 }
 
-.home-second-section .rightbar .rightbar-description p {
+.homepage-second-section .rightbar .rightbar-description p {
   font-size: 20px;
 }
 
+.homepage-third-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.homepage-third-section h2 {
+  margin-top: 15px;
+}
+
+.approach1,
+.approach2 {
+  display: flex;
+  gap: 30px;
+}
+
+.homepage-third-section img {
+  width: 240px;
+  height: 240px;
+}
+
+.approach2 {
+  margin-top: 50px;
+}
+
+.approach1 .help,
+.approach2 .skill-count {
+  display: flex;
+}
+
+.approach1 .help .help-info,
+.approach2 .skill-count .skill-info {
+  margin-top: 180px;
+}
+
+.approach1 .help .help-info p,
+.approach2 .skill-count .skill-info p {
+  background-color: #b5c2f4;
+  padding: 20px;
+  border-radius: 5%;
+  color: black;
+  font-size: 25px;
+}
+
+@media (max-width: 1920px) and (min-width: 760px) {
+  .homepage-fourth-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .homepage-fourth-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .homepage-fourth-section .rightbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .homepage-fourth-section .leftbar img {
+    height: 150px;
+    width: 150px;
+  }
+  .homepage-fourth-section .leftbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .homepage-fourth-section .rightbar p {
+    margin-top: 10px;
+    width: 95%;
+    text-align: center;
+    color: #273469;
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1920px) {
+  .homepage-fourth-section .leftbar img {
+    width: 300px;
+    height: 300px;
+  }
+  .homepage-fourth-section .leftbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 912px;
+    height: 816px;
+  }
+}
+.homepage-fourth-section .rightbar img {
+  width: 120px;
+  height: 120px;
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
+  .homepage-fourth-section .rightbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 912px;
+    height: 816px;
+  }
+  .homepage-fourth-section .rightbar p {
+    margin-top: 10px;
+    width: 95%;
+    text-align: center;
+    color: #273469;
+    font-size: 25px;
+  }
+}
+.homepage-fourth-section .rightbar-top {
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-fourth-section h1 {
+  font-size: var(--big-font-size);
+}
+
+@media (max-width: 1920px) {
+  .homepage-fourth-section .leftbar h1 {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .homepage-fourth-section .leftbar h1 {
+    margin-top: 15px;
+  }
+}
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
