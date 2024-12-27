@@ -208,36 +208,37 @@
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    p{
+  
+      margin-top: 10px;
+      width: 95%;
+      text-align: center;
+      color: #273469;
+      font-size: 16px;
+    
   }
-  .homepage-fourth-section .leftbar img{
-    height: 150px;
-    width: 150px;
-   }
+   img{
+    width: 120px;
+    height: 120px;
+  }
+  }
    .homepage-fourth-section .leftbar{
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
      margin-top: 40px;
+     img{
+      height: 150px;
+      width: 150px;
+     }
     
      
    }
-   .homepage-fourth-section .rightbar p{
   
-    margin-top: 10px;
-    width: 95%;
-    text-align: center;
-    color: #273469;
-    font-size: 16px;
-  
-}
 }
 
 @media (min-width: 768px) and (max-width: 1920px){
-.homepage-fourth-section .leftbar img{
- width: 300px;
- height: 300px;
-}
 .homepage-fourth-section .leftbar{
   display: flex;
   flex-direction: column;
@@ -245,12 +246,13 @@
   justify-content: center;
   width: 912px;
   height: 816px;
+  img{
+    width: 300px;
+    height: 300px;
+   }
 }
 }
-.homepage-fourth-section .rightbar img{
-  width: 120px;
-  height: 120px;
-}
+
 
 
 @media(min-width: 768px) and (max-width:1920px){
@@ -294,6 +296,200 @@
     margin-top: 15px;
 
   }
+ }
+
+ @media (min-width: 768px) and (max-width: 1920px) {
+  .homepage-fifth-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .homepage-fifth-section .first-row,
+  .homepage-fifth-section .third-row{
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+    img{
+      width: 240px;
+      height: 240px;
+      
+    }
+
+  }
+   .homepage-fifth-section .second-row{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+   h1{
+    font-size: var(--big-font-size);
+  }
+  img{
+    width: 64px;
+    height: 64px;
+  }
+
+  }
+  
+ }
+ @media(min-width: 769px){
+  .homepage-sixth-section{
+    margin-top: 100px;
+    .blogs,
+    .interviews,
+    .academic{
+      position: relative;
+      display: flex;
+      width: 100%;
+      .blogs-top,
+      .interviews-top,
+      .academic-top{
+        display: flex;
+        h1{
+          font-size: var(--big-font-size);
+          display: flex;
+          align-items: center;
+          margin-left: 30px;
+        }
+        
+      }
+      
+      
+    }
+    .blogs .cards,
+    .academic .cards{
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      margin-left: 200px;
+      div{
+        width: 256px;
+        height: 332px;
+        flex-shrink: 0;
+        img{
+          width: 240px;
+          height: 240px;
+        }
+        h2{
+          text-align: center;
+        }
+        .abstract-card{
+          width: 240px;
+          height: 480px;
+          margin-top: 15px;
+        }
+        
+      }
+     
+    }
+    .academic{
+      width: 1900px;
+      height: 956px;
+    }
+    .academic .cards{
+      margin-left: 90px;
+      div{
+        width: 256px;
+        height: 876px;
+      }
+      button{
+        margin-left: 30%;
+        background-color: black;
+        color:white;
+        justify-self: center;
+        font-size: 20px;
+        padding: 3%;
+        font-weight: lighter;
+        border-radius: 3%;
+      }
+    }
+    
+    .interviews{
+      margin-top: 50px;
+    }
+    .interviews .cards{
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      margin-left: 100px;
+      div{
+        width: 426px;
+        height: 332px;
+        flex-shrink: 0;
+        img{
+          width: 426px;
+          height: 240px;
+        }
+        h2{
+          text-align: center;
+        }
+        
+      }
+     
+    }
+    
+
+    .arrow img{
+      width: 64px;
+      height: 64px;
+    }
+    .arrow{
+      opacity: 50%;
+    }
+    .arrow-right {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 10;
+    
+    }
+    .arrow-left {
+      position: absolute;
+      top: 40%;
+      left: 25px;
+      transform: translateX(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+     
+    }
+    .academic{ 
+      .arrow-left{
+      top: 46.5%
+    }
+    
+  }
+
+
+
+
+
+  }
+ }
+
+ .breaker2{
+  /* breaker */
+
+width: 1900px;
+height: 8px;
+
+/* black-white-gradient */
+background: linear-gradient(90deg, #111111 0%, rgba(238, 238, 238, 0) 100%);
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
  }
 
 

@@ -496,9 +496,16 @@ the website, in dark theme
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .homepage-fourth-section .leftbar img {
-    height: 150px;
-    width: 150px;
+  .homepage-fourth-section .rightbar p {
+    margin-top: 10px;
+    width: 95%;
+    text-align: center;
+    color: #273469;
+    font-size: 16px;
+  }
+  .homepage-fourth-section .rightbar img {
+    width: 120px;
+    height: 120px;
   }
   .homepage-fourth-section .leftbar {
     display: flex;
@@ -507,19 +514,12 @@ the website, in dark theme
     justify-content: center;
     margin-top: 40px;
   }
-  .homepage-fourth-section .rightbar p {
-    margin-top: 10px;
-    width: 95%;
-    text-align: center;
-    color: #273469;
-    font-size: 16px;
+  .homepage-fourth-section .leftbar img {
+    height: 150px;
+    width: 150px;
   }
 }
 @media (min-width: 768px) and (max-width: 1920px) {
-  .homepage-fourth-section .leftbar img {
-    width: 300px;
-    height: 300px;
-  }
   .homepage-fourth-section .leftbar {
     display: flex;
     flex-direction: column;
@@ -528,12 +528,11 @@ the website, in dark theme
     width: 912px;
     height: 816px;
   }
+  .homepage-fourth-section .leftbar img {
+    width: 300px;
+    height: 300px;
+  }
 }
-.homepage-fourth-section .rightbar img {
-  width: 120px;
-  height: 120px;
-}
-
 @media (min-width: 768px) and (max-width: 1920px) {
   .homepage-fourth-section .rightbar {
     display: flex;
@@ -570,6 +569,188 @@ the website, in dark theme
     margin-top: 15px;
   }
 }
+@media (min-width: 768px) and (max-width: 1920px) {
+  .homepage-fifth-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .homepage-fifth-section .first-row,
+  .homepage-fifth-section .third-row {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+  }
+  .homepage-fifth-section .first-row img,
+  .homepage-fifth-section .third-row img {
+    width: 240px;
+    height: 240px;
+  }
+  .homepage-fifth-section .second-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .homepage-fifth-section .second-row h1 {
+    font-size: var(--big-font-size);
+  }
+  .homepage-fifth-section .second-row img {
+    width: 64px;
+    height: 64px;
+  }
+}
+@media (min-width: 769px) {
+  .homepage-sixth-section {
+    margin-top: 100px;
+  }
+  .homepage-sixth-section .blogs,
+  .homepage-sixth-section .interviews,
+  .homepage-sixth-section .academic {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+  .homepage-sixth-section .blogs .blogs-top,
+  .homepage-sixth-section .blogs .interviews-top,
+  .homepage-sixth-section .blogs .academic-top,
+  .homepage-sixth-section .interviews .blogs-top,
+  .homepage-sixth-section .interviews .interviews-top,
+  .homepage-sixth-section .interviews .academic-top,
+  .homepage-sixth-section .academic .blogs-top,
+  .homepage-sixth-section .academic .interviews-top,
+  .homepage-sixth-section .academic .academic-top {
+    display: flex;
+  }
+  .homepage-sixth-section .blogs .blogs-top h1,
+  .homepage-sixth-section .blogs .interviews-top h1,
+  .homepage-sixth-section .blogs .academic-top h1,
+  .homepage-sixth-section .interviews .blogs-top h1,
+  .homepage-sixth-section .interviews .interviews-top h1,
+  .homepage-sixth-section .interviews .academic-top h1,
+  .homepage-sixth-section .academic .blogs-top h1,
+  .homepage-sixth-section .academic .interviews-top h1,
+  .homepage-sixth-section .academic .academic-top h1 {
+    font-size: var(--big-font-size);
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .homepage-sixth-section .blogs .cards,
+  .homepage-sixth-section .academic .cards {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-left: 200px;
+  }
+  .homepage-sixth-section .blogs .cards div,
+  .homepage-sixth-section .academic .cards div {
+    width: 256px;
+    height: 332px;
+    flex-shrink: 0;
+  }
+  .homepage-sixth-section .blogs .cards div img,
+  .homepage-sixth-section .academic .cards div img {
+    width: 240px;
+    height: 240px;
+  }
+  .homepage-sixth-section .blogs .cards div h2,
+  .homepage-sixth-section .academic .cards div h2 {
+    text-align: center;
+  }
+  .homepage-sixth-section .blogs .cards div .abstract-card,
+  .homepage-sixth-section .academic .cards div .abstract-card {
+    width: 240px;
+    height: 480px;
+    margin-top: 15px;
+  }
+  .homepage-sixth-section .academic {
+    width: 1900px;
+    height: 956px;
+  }
+  .homepage-sixth-section .academic .cards {
+    margin-left: 90px;
+  }
+  .homepage-sixth-section .academic .cards div {
+    width: 256px;
+    height: 876px;
+  }
+  .homepage-sixth-section .academic .cards button {
+    margin-left: 30%;
+    background-color: black;
+    color: white;
+    justify-self: center;
+    font-size: 20px;
+    padding: 3%;
+    font-weight: lighter;
+    border-radius: 3%;
+  }
+  .homepage-sixth-section .interviews {
+    margin-top: 50px;
+  }
+  .homepage-sixth-section .interviews .cards {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-left: 100px;
+  }
+  .homepage-sixth-section .interviews .cards div {
+    width: 426px;
+    height: 332px;
+    flex-shrink: 0;
+  }
+  .homepage-sixth-section .interviews .cards div img {
+    width: 426px;
+    height: 240px;
+  }
+  .homepage-sixth-section .interviews .cards div h2 {
+    text-align: center;
+  }
+  .homepage-sixth-section .arrow img {
+    width: 64px;
+    height: 64px;
+  }
+  .homepage-sixth-section .arrow {
+    opacity: 50%;
+  }
+  .homepage-sixth-section .arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .homepage-sixth-section .arrow-left {
+    position: absolute;
+    top: 40%;
+    left: 25px;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .homepage-sixth-section .academic .arrow-left {
+    top: 46.5%;
+  }
+}
+.breaker2 {
+  /* breaker */
+  width: 1900px;
+  height: 8px;
+  /* black-white-gradient */
+  background: linear-gradient(90deg, #111111 0%, rgba(238, 238, 238, 0) 100%);
+  border-radius: 4px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
